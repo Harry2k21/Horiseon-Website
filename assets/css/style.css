@@ -1,13 +1,15 @@
+/* The whole page  */
 * {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
 }
-
+/* The background theme main color is white */
 body {
     background-color: #d9dcd6;
 }
 
+/* The header of the website and its colours and fonts */
 .header {
     padding: 20px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -15,15 +17,18 @@ body {
     color: #ffffff;
 }
 
+/* Inside the header the H1 child elements are inline block displayed and have a different font size */
 .header h1 {
     display: inline-block;
     font-size: 48px;
 }
 
+/* the class of seo thats inside the header has a different colour */
 .header h1 .seo {
     color: #d9dcd6;
 }
 
+/* header has nav bar inside it */
 .header nav {
     padding-top: 15px;
     margin-right: 20px;
@@ -32,24 +37,28 @@ body {
     font-size: 20px;
 }
 
+/* the nav bar inside the header has 3 different link elements inside it */
 .header nav ul {
     list-style-type: none;
 }
 
+/* nav bar has a li of services inside it */
 .header nav ul li {
     display: inline-block;
     margin-left: 25px;
 }
 
+/* the anchor tag link the pages to each semantic section of the page */
 a {
     color: #ffffff;
     text-decoration: none;
 }
 
+/* This is the font size of the discriptions */
 p {
     font-size: 16px;
 }
-
+/* This is the main image of the board room meeting  */
 .hero {
     height: 800px;
     width: 100%;
@@ -59,22 +68,26 @@ p {
     background-position: center;
 }
 
+/* This class makes elements inside it float left */
 .float-left {
     float: left;
     margin-right: 25px;
 }
 
+/*  This class makes element inside it float right */
 .float-right {
     float: right;
     margin-left: 25px;
 }
 
+/* this class has a width of 75% and in displayed in an inline block */
 .content {
     width: 75%;
     display: inline-block;
     margin-left: 20px;
 }
 
+/*  the benefits class refers to the aside section and it the right section of the screen */
 .benefits {
     margin-right: 20px;
     padding: 20px;
@@ -86,55 +99,36 @@ p {
     background-color: #2589bd;
 }
 
-.benefit-lead {
+/* All the benefit classes are spaced out evenly */
+/*  The best practice for this is to group all these together
+ .benefit-brand, .benfit-lead, . benfit-cost,{} and then put the same property but onces not 3x */
+/* this relates to lead generation */
+.benefit-lead, .benefit-cost, .benefit-brand {
     margin-bottom: 32px;
     color: #ffffff;
 }
 
-.benefit-brand {
-    margin-bottom: 32px;
-    color: #ffffff;
-}
 
-.benefit-cost {
-    margin-bottom: 32px;
-    color: #ffffff;
-}
 
-.benefit-lead h3 {
+/* The same for all these 3 decribing h3 */
+/*  The best practice for this is to group all these together
+ .benefit-brand h3, .benfit-lead h3, . benfit-cost h3,{} and then put the same property but onces not 3x */
+
+.benefit-lead h3, .benefit-brand h3, .benefit-cost h3 {
     margin-bottom: 10px;
     text-align: center;
 }
 
-.benefit-brand h3 {
-    margin-bottom: 10px;
-    text-align: center;
-}
 
-.benefit-cost h3 {
-    margin-bottom: 10px;
-    text-align: center;
-}
-
-.benefit-lead img {
+/* The same is applied here for best practice and all of them are grouped together */
+.benefit-lead img, .benefit-brand img, .benefit-cost img {
     display: block;
     margin: 10px auto;
     max-width: 150px;
 }
 
-.benefit-brand img {
-    display: block;
-    margin: 10px auto;
-    max-width: 150px;
-}
-
-.benefit-cost img {
-    display: block;
-    margin: 10px auto;
-    max-width: 150px;
-}
-
-.search-engine-optimization {
+/* All of these are also grouped to make code efficient */
+.search-engine-optimization, .social-media-marketing, .online-reputation-management  {
     margin-bottom: 20px;
     padding: 50px;
     height: 300px;
@@ -143,51 +137,18 @@ p {
     color: #ffffff;
 }
 
-.online-reputation-management {
-    margin-bottom: 20px;
-    padding: 50px;
-    height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
-    color: #ffffff;
-}
-
-.social-media-marketing {
-    margin-bottom: 20px;
-    padding: 50px;
-    height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
-    color: #ffffff;
-}
-
-.search-engine-optimization img {
+/* I also grouped the images so their height is relative to one another */
+.search-engine-optimization img, .online-reputation-management img,.social-media-marketing img  {
     max-height: 200px;
 }
 
-.online-reputation-management img {
-    max-height: 200px;
-}
-
-.social-media-marketing img {
-    max-height: 200px;
-}
-
-.search-engine-optimization h2 {
+/* Again making the code more efficient giving more space */
+.search-engine-optimization h2, .online-reputation-management h2, .social-media-marketing h2 {
     margin-bottom: 20px;
     font-size: 36px;
 }
 
-.online-reputation-management h2 {
-    margin-bottom: 20px;
-    font-size: 36px;
-}
-
-.social-media-marketing h2 {
-    margin-bottom: 20px;
-    font-size: 36px;
-}
-
+/* This is the bottom of the page and the text is in the center of it */
 .footer {
     padding: 30px;
     clear: both;
@@ -195,6 +156,7 @@ p {
     text-align: center;
 }
 
+/* This needs to be seprate because there are two different font sizes in the footer */
 .footer h2 {
     font-size: 20px;
 }

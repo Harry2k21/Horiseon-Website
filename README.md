@@ -1,7 +1,7 @@
 # Horiseon-Website
 
 Website code refactoring project created for my bootcamp with EdX and Birmingham University
-
+Link - https://harry2k21.github.io/Horiseon-Website/
 ## Preview
 
 ![image](https://user-images.githubusercontent.com/88850029/220477199-a6dcbf63-e715-474b-a5b5-0e0f22204875.png)
@@ -26,7 +26,7 @@ This Website is a for a Marking Agency called Horiseon I added semantic HTML ele
 ## Installation
 
 Ethier Open this link or dowload the github repo using the git clone command in your terminal
-
+https://harry2k21.github.io/Horiseon-Website/
 ## Usage 
 
 You can navigate the website by clicking on the section you would like to go on on the nav bar
